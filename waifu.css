@@ -66,11 +66,29 @@
 	color: #0099cc;
 }
 
+/*for some browsers not support @media*/
 #waifu #live2d {
 	cursor: grab;
 	height: 300px;
 	position: relative;
 	width: 300px;
+}
+/*different part*/
+@media (max-width: 768px) {
+	#waifu #live2d {
+	cursor: grab;
+	height: 200px;
+	position: relative;
+	width: 200px;
+}
+}
+@media (min-width: 768px) {
+	#waifu #live2d {
+	cursor: grab;
+	height: 300px;
+	position: relative;
+	width: 300px;
+}
 }
 
 #waifu #live2d:active {
